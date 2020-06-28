@@ -1,4 +1,4 @@
-# FRIDAY
+# ARJUN USERBOT
 
 <p align="center">
 <img src="https://telegra.ph/file/f580038f91382b976d5f8.jpg" alt="FRIDAY USERBOT">
