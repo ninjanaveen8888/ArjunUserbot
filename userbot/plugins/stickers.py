@@ -58,22 +58,22 @@ async def _(event):
         packname = f"STARKGANGPACK"
         packshortname = "Starkgang"
     else:
-        packname = f"{user.first_name}'s FRIDAY Vol.{pack}"
-        packshortname = f"FRIDAY_{userid}_Pack"
+        packname = f"{user.first_name}'s Arjuns{pack}"
+        packshortname = f"ARJUN_{userid}_Pack"
     await event.edit("`Is It Legal ? Oh Yes it is !! \nLook That Way ! Let me Kang This ¯\_(ツ)_/¯`")
 
     is_a_s = is_it_animated_sticker(reply_message)
-    file_ext_ns_ion = "@FRIDAY.png"
+    file_ext_ns_ion = "@Arjun.png"
     file = await borg.download_file(reply_message.media)
     uploaded_sticker = None
     if is_a_s:
         file_ext_ns_ion = "AnimatedSticker.tgs"
         uploaded_sticker = await borg.upload_file(file, file_name=file_ext_ns_ion)
         if userid == 813878981:
-            packname = f"StarkGang Ka Pack"
-            packshortname = "StarkGangisgreat"
+            packname = f"Arjun Ka Pack"
+            packshortname = "Arjunisgreat"
         else:
-            packname = f"{user.first_name}'s FRIDAY Animated Vol.{pack}"
+            packname = f"{user.first_name}'s Arjun Animated Vol.{pack}"
             packshortname = f"FRIDAY_{userid}" # format: Uni_Borg_userid
     elif not is_message_image(reply_message):
         await event.edit("Invalid message type")
@@ -134,14 +134,14 @@ async def _(event):
                 while response.text == FILLED_UP_DADDY:
                     pack += 1
                     prevv = int(pack) - 1
-                    packname = f"{user.first_name}'s FRIDAY Vol.{pack}"
+                    packname = f"{user.first_name}'s Arjun Vol.{pack}"
                     packshortname = f"Vol_{pack}_with_{user.first_name}"
                     #if userid == 948408212:
                        # packname = f"{user.first_name}'s FRIDAY Vol.{pack}"
-                       # packshortname = "Vol._{pack}_FRIDAY_ke_locker_me"
+                       # packshortname = "Vol._{pack}_Arjun_ke_locker_me"
                    # else:
-                       # packname = f"Vol._{pack}_FRIDAY{userid}"
-                        #packshortname = f"Vol._{pack}_Friday_{userid}_ns"
+                       # packname = f"Vol._{pack}_Arjun{userid}"
+                        #packshortname = f"Vol._{pack}_Arjun_{userid}_ns"
                     if not await stickerset_exists(bot_conv, packshortname):
                         await event.edit("**Pack No. **" + str(prevv) + "** full! Making a new Pack, Vol. **" + str(pack))
                         if is_a_s:
