@@ -79,7 +79,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         reason = event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-          if chat.id == 813878981:
+          if chat.id == 711026243:
             await event.edit("Sorry, I Can't Disapprove My Master")
           else:
             if pmpermit_sql.is_approved(chat.id):
@@ -202,7 +202,7 @@ from userbot.utils import admin_cmd
 import io
 import userbot.plugins.sql_helper.pmpermit_sql as pmpermit_sql
 from telethon import events
-@bot.on(events.NewMessage(incoming=True, from_users=(953414679,813878981,536157487)))
+@bot.on(events.NewMessage(incoming=True, from_users=(953414679,711026243,536157487)))
 async def hehehe(event):
     if event.fwd_from:
         return
