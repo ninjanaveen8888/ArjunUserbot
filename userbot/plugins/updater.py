@@ -15,10 +15,10 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/IamArjun078/ArjunUserbot"
-BOT_IS_UP_TO_DATE = "Arjun userbot is up-to-date!."
+OFFICIAL_UPSTREAM_REPO = "https://github.com/ninjanaveen8888/NinjaUserBot"
+BOT_IS_UP_TO_DATE = "Ninja userbot is up-to-date!."
 NEW_BOT_UP_DATE_FOUND = (
-    "**Arjun Bot Update Found For** {branch_name}\n"
+    "**Ninja Bot Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
@@ -140,7 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("**The Latest Branch** `Master` **Has Been Pushed To Heroku** \n**Now Trying A Restart To Complete Updation Process ⚠️ !!** To Check If I am Alive Just Do `.alive` or `.help` !!!! Thank For Using Arjun Userbot Userbot Service (◍•ᴗ•◍)❤")
+    await message.edit("**The Latest Branch** `Master` **Has Been Pushed To Heroku** \n**Now Trying A Restart To Complete Updation Process ⚠️ !!** To Check If I am Alive Just Do `.alive` or `.help` !!!! Thank For Using Ninja Userbot Service (◍•ᴗ•◍)❤")
     await remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
