@@ -19,14 +19,14 @@ PREV_REPLY_MESSAGE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n`THIS IS ILLEGAL AND REGARDED AS A CRIME`"
-USER_BOT_WARN_ZERO = "`You were spamming my peru master's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("`Hello ! This is` **Arjun Official Bot**\n"
-                    "`Private Messaging Security Protocol ⚠️`\n\n"
-                    "**You Have Trespassed To My Boss\n"
-                    f"{DEFAULTUSER}'s Inbox**\n\n"
-                    f"{CUSTOM_MIDDLE_PMP} 🌸\n\n"
-                    "**Now You Are In Trouble So Send** 🌸 `/start` 🌸  **To Start A Valid Conversation!!**")
+CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**Until then Contact me through my Channel's Discussion Group!** \n`@Royal_Giveaway and @RoyalGiveawayChat`"
+USER_BOT_WARN_ZERO = "`You were spamming my pro {DEFAULTUSER}'s inbox, henceforth have been blocked by Ninja userbot.` "
+USER_BOT_NO_WARN = ("`I haven't Approved you to PM yet. Please Wait for me to look in and Approve your PM.`\n"
+                    "`I Mostly Approve PM's`\n\n"
+                    "**My Master Ninja Naveen is Busy! \n"
+                    f"Just Leave your Message here!**\n\n"
+                    f"{CUSTOM_MIDDLE_PMP} \n\n"
+                    "**Don't Spam My PM, else you'll be Blocked**")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
